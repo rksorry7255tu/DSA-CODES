@@ -93,6 +93,27 @@ public class LL {
         return size;
     }
 
+    //reversing linkedlist
+    public void reverse(){
+        if(head==null||head.next==null){
+            return;
+        }
+
+        Node previous=head;
+        Node current=head.next;
+        while(current!=null){
+            Node next=current.next;
+            current.next=previous;
+            //updates
+            previous=current;
+            current=next;
+        }
+        
+        head.next=null;
+        head=previous;
+    }
+
+
     public static void main(String[] args) {
         LL list=new LL();
         list.addLast("last");
@@ -106,6 +127,10 @@ public class LL {
         list.printList();
         System.out.println(list.size);
         System.out.println(list.getSize());
+        list.printList();
+        list.reverse();
+         list.printList();
+
         
     }
 
