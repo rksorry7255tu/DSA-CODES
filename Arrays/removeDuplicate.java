@@ -1,5 +1,7 @@
 public class removeDuplicate {
     public static void main(String[] args) {
+
+        //just to find the no of unique elements
         int arr[]={0,0,1,1,1,2,2,3,3,4};
        int  count=1;
         int i=0;
