@@ -15,8 +15,6 @@ public class maxSubArray {
             }
        }
        System.out.println(length);
-
-
        
     }
 }

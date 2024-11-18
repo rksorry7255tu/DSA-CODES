@@ -19,8 +19,6 @@ public class singleNumber {
                 res=nums[i];
             }
         }
-        System.out.println(res);
-       
-       
+        System.out.println(res); 
     }
 }

@@ -1,5 +1,7 @@
 public class maxSubArrayOptimize {
     public static void main(String[] args) {
+
+        //this is the only optimized solution for +ve elements
         int arr[] = { 1 ,4 ,3 ,3 ,5 ,5};
         int k = 16;
 
