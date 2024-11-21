@@ -2,27 +2,33 @@ public class spiralMatrix {
     public static void main(String[] args) {
         int arr[][]={{1,2,3,4},{5,6,7,8},{9,10,11,12}};
 
-        int ul=0;
-        int ur =0;
-        int lr=arr.length-1;
-        int ll=arr.length;
+        int left=0;
+        int right=arr[0].length-1;
+        int top=0;
+        int bottom=arr.length-1;
+       
+        while(top<=bottom&&left<=right){
 
-        int i=0;
-        while(i<arr.length){
-           for(int j=ul;j<=lr;j++ ){
-            System.out.print(arr[ul][j]+" ");
-           }
-           ur++;
-           for(int j=ur;j<=lr;j++){
-                System.out.print(arr[lr][j]);
-           }
-           lr--;
-
-
-
-
-           i++;
-           break;
-        }
+           
+            for(int i=left;i<=right;i++){
+                System.out.print(arr[top][i]+" ");
+            }
+            top++;
+            for(int i=top;i<=bottom;i++){
+                System.out.print(arr[i][right]+" ");
+            }
+            right--;
+            if(top<=bottom){
+                for(int i=right;i>=left;i--){
+                    System.out.print(arr[bottom][i]+" ");
+                }
+                bottom--;
+            }
+           
+            for(int i=bottom;i>=top;i--){
+                System.out.print(arr[i][left]+" ");
+            }
+            left++;
+        } 
     }
 }
