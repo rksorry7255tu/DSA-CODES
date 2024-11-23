@@ -1,1 +1,1 @@
-list.removeAll(list);
+i
