@@ -7,9 +7,9 @@ public class mergesort {
         int arr[]={52,2,9};
         int low = 0;
         int high = arr.length-1;
-        //int mid = (low + high) / 2;
+        
         m.mergesorts(arr, low, high);
-       //m.merge(arr, low, mid, high);
+       
       
         for(int i=0;i<arr.length;i++){
             System.out.println(arr[i]);

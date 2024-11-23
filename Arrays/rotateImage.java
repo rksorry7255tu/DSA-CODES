@@ -7,21 +7,15 @@ public class rotateImage {
         int count=0;
         int countarr1=0;
         while(i>=0||j<arr[0].length){
-            //System.out.print("{");
             while(j>=0&&j<arr[0].length&&i>=0){
-               // System.out.print(arr[i][j]+" ");
-               
                 arr1[countarr1++]=arr[i][j];
                 i--;
             }
-            //System.out.println("}");
-            
             i=arr.length-1;
             j++;
             if(count==arr.length-1){
                 break;
             }
-            
             count++;
         }
         for(int k=0;k<arr1.length;k++){
