@@ -1,1 +1,1 @@
-  i++;
+list.removeAll(list);
