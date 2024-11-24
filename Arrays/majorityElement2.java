@@ -11,9 +11,6 @@ public class majorityElement2 {
                 map.put(nums[i], 1);
             }else{
                 map.put(nums[i], map.get(nums[i])+1);
-                // if(map.get(nums[i])>nums.length/3){
-                //     list.add(nums[i]);
-                // }
             }
         }
         for (int i : map.keySet()) {
