@@ -31,7 +31,6 @@ public class fourSum1 {
                 list.add(nums[k]);
                 list.add(nums[l]);
                 // System.out.println(nums[i] + " " + nums[j] + " " + nums[k] + " " + nums[l]);
-
                 sum = sum - nums[l];
                 l--;
                 if (l == k) {
@@ -54,8 +53,7 @@ public class fourSum1 {
                     sum1 = sum1 + list.get(m);
                 }
                 if (sum1 == target && !listlist.contains(list)) {
-                    // System.out.println(list);
-
+                    
                     listlist.add(list);
                 }
             }
@@ -65,17 +63,5 @@ public class fourSum1 {
             System.out.println(listlist1);
         }
     }
-    public static int[] removeDuplicates(int[] nums) {
-        HashSet<Integer> set = new HashSet<>();
-        for (int num : nums) {
-            set.add(num); // Adds only unique elements
-        }
-        // Convert the set back to an array
-        int[] uniqueArray = new int[set.size()];
-        int index = 0;
-        for (int num : set) {
-            uniqueArray[index++] = num;
-        }
-        return uniqueArray;
-    }
+ 
 }
