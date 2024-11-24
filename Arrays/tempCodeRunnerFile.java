@@ -1,1 +1,1 @@
-i
+if(sum==target){
