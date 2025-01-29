@@ -7,10 +7,7 @@ public class mergesort {
         int arr[]={52,2,9};
         int low = 0;
         int high = arr.length-1;
-        
         m.mergesorts(arr, low, high);
-       
-      
         for(int i=0;i<arr.length;i++){
             System.out.println(arr[i]);
         }
