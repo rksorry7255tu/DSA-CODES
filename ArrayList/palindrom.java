@@ -1,6 +1,6 @@
 public class palindrom {
   public static void main(String[] args) {
-    int x = 121;
+    int x = 10;
     int reverse = 0;
     int n = x;
     while (n > 0) {

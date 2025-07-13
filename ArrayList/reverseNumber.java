@@ -11,11 +11,8 @@ public class reverseNumber {
       reverse = reverse * 10 + digit;
       n = n / 10;
     }
-    if (n > 0) {
-      System.out.println(reverse);
-    } else {
-      System.out.println(reverse);
-    }
+
+    System.out.println(reverse);
 
   }
 }

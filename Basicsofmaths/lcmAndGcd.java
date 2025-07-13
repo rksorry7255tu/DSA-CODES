@@ -3,31 +3,17 @@ public class lcmAndGcd {
     int a = 1;
     int b = 1;
     int res[] = new int[2];
-    int LCM = a;
-    int iA = 1;
-    int iB = 1;
-    int lcmA = a;
-    int lcmB = b;
-    while (lcmA != lcmB) {
-      if (lcmA < lcmB) {
-        lcmA = a * iA;
-        iA++;
-      }
-      if (lcmB < lcmA) {
-        lcmB = b * iB;
-        iB++;
-      }
-      if (lcmA == lcmB) {
-        res[0] = LCM;
+    int lcm=1;
+    int i=2;
+    int small=Math.max(a, b);
+    int large=Math.min(a, b);
+    while(true){
+      if(small%i==0&&large%i==0){
+        
       }
     }
 
-    int small = 1;
-    int large = 1;
-    if (a < b) {
-      small = a;
-      large = b;
-    }
+    
     int GCD = 1;
     int remainder = large % small;
     while (true) {
@@ -39,6 +25,6 @@ public class lcmAndGcd {
         small = remainder;
       }
     }
-
+    
   }
 }
